@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://img.icons8.com/?size=1x&id=1Z0XRfLWlnbO&format=png" type="image/x-icon"
+</head>
+
+<body>
+    <div class="navigation">
+        <div class="left">
+            <span>Library</span>
+        </div>
+        <div class="right">
+            <a href="#books">Books</a>
+            <a href="#register">Register</a>
+            <a href="#contact">Contact Us</a>
+            <a href="#logout">Logout</a>
+        </div>
+    </div>
+
+    <!--Books table-->
+    <div id="books">
+
+        <table class="book-list">
+            <caption>
+                <h1>Books</h1>
+            </caption>
+            <thead>
+                <tr>
+                    <th>Book ID</th>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>Genre</th>
+                    <th>Availability</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>
+                        Crime for the Books
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>June 2022</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count</td>
+                                <td>450</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>978-1234567890</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Kate Young</td>
+                    <td>Mystery</td>
+                    <td>Available</td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>
+                        Between You and Me
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>March 2019</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count</td>
+                                <td>432</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>978006242546</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Susan Wiggs</td>
+                    <td>Fiction</td>
+                    <td>Available</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>
+                        Till Death Do Us Apart
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>April 2016</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count</td>
+                                <td>352</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>9780399174469</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Amanda Quick</td>
+                    <td>Romantic Suspense</td>
+                    <td> Not Available</td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>
+                        Gone Girl
+                        <table class="nested-table">
+                            <tr>
+                                <td>Publication Date:</td>
+                                <td>June 2012</td>
+                            </tr>
+                            <tr>
+                                <td>Page Count</td>
+                                <td>432</td>
+                            </tr>
+                            <tr>
+                                <td>ISBN</td>
+                                <td>978053219069</td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td>Gillian Flynn</td>
+                    <td>Thriller</td>
+                    <td>Not Available</td>
+                </tr>
+                <td>5</td>
+                <td>
+                    Harry Potter and the Goblet of Fire
+                    <table class="nested-table">
+                        <tr>
+                            <td>Publication Date:</td>
+                            <td>July 2000</td>
+                        </tr>
+                        <tr>
+                            <td>Page Count</td>
+                            <td>734</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN</td>
+                            <td>97803426789</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>J.K.Rowling</td>
+                <td>Fantasy</td>
+                <td>Available</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+
+    <!--Registeration Form-->
+    <div id="register">
+
+        <form class="registeration">
+            <h2>Registeration Form</h2>
+            <div class="details">
+                <label for="name">First Name</label>
+
+                <input type="text" id="name" name="name" placeholder="Your Name Here" required>
+            </div>
+            <div class="details">
+                <label for="Lastname">Last Name</label>
+
+                <input type="text" id="Lastname" name="Lastname" placeholder="Last Name" required>
+            </div>
+            <div class="details">
+                <label for="Dob">Date of Birth</label>
+
+                <input type="date" id="Dob" name="Dob" required>
+            </div>
+            <div class="details">
+                <label for="age">Age</label>
+
+                <input type="number" id="age" name="age" placeholder="e.g.5" min="5" max="100" required>
+            </div>
+            <div class="details">
+                <label for="email">Email</label>
+
+                <input type="email" id="email" name="email" placeholder="john123@gmail.com" required>
+            </div>
+            <div class="details">
+                <label for="password">Password</label>
+
+                <input type="password" id="password" name="password" placeholder="12345678" required>
+            </div>
+            <div class="details">
+                <label for="confirm-password">Confirm Password</label>
+
+                <input type="password" id="confirm-password" name="confirm-password" placeholder="12345678" required>
+            </div>
+            <div class="details">
+                <button type="submit">Register</button>
+
+        </form>
+
+
+    </div>
+
+</body>
+
+</html>
